@@ -1,0 +1,6 @@
+framework module LRSpotlight {
+  umbrella header "LRSpotlight-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "appleWithBlackBg.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

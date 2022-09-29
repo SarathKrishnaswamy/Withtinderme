@@ -1,0 +1,6 @@
+framework module Pods_Spark_me_Spark_meUITests {
+  umbrella header "Pods-Spark me-Spark meUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

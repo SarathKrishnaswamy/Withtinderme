@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="344" id="KGk-i7-Jjw" customClass="NoDataTableViewCell" customModule="Spark_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="344"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="344"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0iv-Fl-HlV">
+                        <rect key="frame" x="40" y="47" width="240" height="204"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="204" id="DUJ-3t-Zo2"/>
+                            <constraint firstAttribute="width" constant="240" id="t6e-D9-fTO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kM-fw-oSS">
+                        <rect key="frame" x="16" y="259" width="288" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="D89-jR-8VH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.53333333333333333" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1kM-fw-oSS" firstAttribute="top" secondItem="0iv-Fl-HlV" secondAttribute="bottom" constant="8" id="6Pk-XH-R8l"/>
+                    <constraint firstItem="1kM-fw-oSS" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="PqL-IS-Lcu"/>
+                    <constraint firstItem="0iv-Fl-HlV" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XAN-E9-eKy"/>
+                    <constraint firstItem="1kM-fw-oSS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Za7-mE-9AS"/>
+                    <constraint firstItem="1kM-fw-oSS" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="jGh-5k-lit"/>
+                    <constraint firstItem="0iv-Fl-HlV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-23" id="puA-To-7DK"/>
+                    <constraint firstItem="1kM-fw-oSS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="uYm-hv-v8q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="0iv-Fl-HlV" id="kJi-Go-QS1"/>
+                <outlet property="noDataLbl" destination="1kM-fw-oSS" id="FDG-wl-fue"/>
+            </connections>
+            <point key="canvasLocation" x="82.608695652173921" y="97.098214285714278"/>
+        </tableViewCell>
+    </objects>
+</document>

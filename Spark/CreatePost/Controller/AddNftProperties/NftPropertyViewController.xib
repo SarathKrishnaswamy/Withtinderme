@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NftPropertyViewController" customModule="Spark_me" customModuleProvider="target">
+            <connections>
+                <outlet property="saveBtn" destination="V3p-mP-9Yd" id="Xlc-NN-9Zf"/>
+                <outlet property="tableView" destination="YPp-ld-Tg8" id="ife-4f-B9H"/>
+                <outlet property="view" destination="vwI-or-Rqi" id="AzR-HW-gww"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vwI-or-Rqi">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add NFT Traits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjL-6C-Om6">
+                    <rect key="frame" x="138.5" y="44" width="137" height="22"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3p-mP-9Yd">
+                    <rect key="frame" x="25" y="794" width="364" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="wIo-ih-u7T"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Save"/>
+                    <connections>
+                        <action selector="saveBtnOnPressed:" destination="-1" eventType="touchUpInside" id="TwH-zY-oLR"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YPp-ld-Tg8">
+                    <rect key="frame" x="0.0" y="77" width="414" height="704"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CZR-qt-sfJ"/>
+                        <outlet property="delegate" destination="-1" id="73X-FX-0ly"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvO-7f-6Fa">
+                    <rect key="frame" x="381.5" y="44" width="17.5" height="22"/>
+                    <color key="tintColor" red="0.23334547880000001" green="0.33146095279999999" blue="0.41569760439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="xmark" catalog="system"/>
+                    <connections>
+                        <action selector="closeBtnOnPressed:" destination="-1" eventType="touchUpInside" id="ILN-Wn-twd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8C3-oe-mtj"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IvO-7f-6Fa" firstAttribute="centerY" secondItem="pjL-6C-Om6" secondAttribute="centerY" id="4R1-k2-am1"/>
+                <constraint firstItem="V3p-mP-9Yd" firstAttribute="top" secondItem="YPp-ld-Tg8" secondAttribute="bottom" constant="13" id="50m-oa-vdy"/>
+                <constraint firstItem="YPp-ld-Tg8" firstAttribute="top" secondItem="pjL-6C-Om6" secondAttribute="bottom" constant="11" id="FvA-lv-aPN"/>
+                <constraint firstItem="8C3-oe-mtj" firstAttribute="bottom" secondItem="V3p-mP-9Yd" secondAttribute="bottom" constant="13" id="GS0-cB-fEC"/>
+                <constraint firstItem="pjL-6C-Om6" firstAttribute="top" secondItem="8C3-oe-mtj" secondAttribute="top" id="VbG-7N-pvH"/>
+                <constraint firstItem="YPp-ld-Tg8" firstAttribute="leading" secondItem="8C3-oe-mtj" secondAttribute="leading" id="adb-Uu-C5K"/>
+                <constraint firstItem="pjL-6C-Om6" firstAttribute="centerX" secondItem="8C3-oe-mtj" secondAttribute="centerX" id="eSh-6k-ZJE"/>
+                <constraint firstItem="8C3-oe-mtj" firstAttribute="trailing" secondItem="V3p-mP-9Yd" secondAttribute="trailing" constant="25" id="esm-gp-gIi"/>
+                <constraint firstItem="8C3-oe-mtj" firstAttribute="trailing" secondItem="YPp-ld-Tg8" secondAttribute="trailing" id="jU9-f4-huw"/>
+                <constraint firstItem="V3p-mP-9Yd" firstAttribute="centerX" secondItem="vwI-or-Rqi" secondAttribute="centerX" id="lgh-0U-bLY"/>
+                <constraint firstItem="8C3-oe-mtj" firstAttribute="trailing" secondItem="IvO-7f-6Fa" secondAttribute="trailing" constant="15" id="vB9-P3-Mhg"/>
+                <constraint firstItem="V3p-mP-9Yd" firstAttribute="leading" secondItem="8C3-oe-mtj" secondAttribute="leading" constant="25" id="vW1-Bj-WFu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="298.55072463768118" y="181.47321428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

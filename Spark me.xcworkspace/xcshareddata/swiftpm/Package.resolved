@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "googlemaps-sp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/YAtechnologies/GoogleMaps-SP.git",
+      "state" : {
+        "revision" : "0e4d95a5844c2a40381bf659fff84cf66699e17b",
+        "version" : "6.0.0"
+      }
+    },
+    {
+      "identity" : "imglykit-sp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/imgly/imglykit-sp.git",
+      "state" : {
+        "revision" : "2bd9e52cc528257ee92694b5bbfbee45e07e9a61",
+        "version" : "10.27.0"
+      }
+    },
+    {
+      "identity" : "pesdk-ios-build",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/imgly/pesdk-ios-build",
+      "state" : {
+        "branch" : "main",
+        "revision" : "624b85380c47498eaae12c29abb3b75ad326353c"
+      }
+    },
+    {
+      "identity" : "vesdk-ios-build",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/imgly/vesdk-ios-build",
+      "state" : {
+        "revision" : "dae6e1e481f4431d2ca2863c1125db531d425cd3",
+        "version" : "10.27.0"
+      }
+    }
+  ],
+  "version" : 2
+}

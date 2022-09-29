@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>654931077657-31siiqp7fmlbida9udbatusfeuen3cep.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.654931077657-31siiqp7fmlbida9udbatusfeuen3cep</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>654931077657-1mnmuovoj10gd08fvk1o4g0n9b03khsc.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD20qIIE95XCmppjBw4ON3f1PnMsLEChKw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>654931077657</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.adhash.spark</string>
+	<key>PROJECT_ID</key>
+	<string>sparkme-a150d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sparkme-a150d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:654931077657:ios:377ecf954b5f53c2cf1888</string>
+</dict>
+</plist>

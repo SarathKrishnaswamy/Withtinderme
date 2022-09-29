@@ -1,0 +1,6 @@
+framework module Pods_Spark_me {
+  umbrella header "Pods-Spark me-umbrella.h"
+
+  export *
+  module * { export * }
+}

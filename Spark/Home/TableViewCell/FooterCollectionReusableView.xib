@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FooterCollectionReusableView" id="U6b-Vx-4bR" customClass="FooterCollectionReusableView" customModule="Spark_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="miD-63-IkY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="qiX-UW-igg">
+                            <rect key="frame" x="27.5" y="10" width="37" height="37"/>
+                            <color key="color" red="0.20784313725490194" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Sparks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crE-V1-gED">
+                            <rect key="frame" x="90.5" y="18" width="139" height="22"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="crE-V1-gED" firstAttribute="leading" secondItem="qiX-UW-igg" secondAttribute="trailing" constant="26" id="4jc-qh-oZH"/>
+                        <constraint firstItem="qiX-UW-igg" firstAttribute="centerY" secondItem="miD-63-IkY" secondAttribute="centerY" id="ByO-ym-ZuN"/>
+                        <constraint firstItem="crE-V1-gED" firstAttribute="centerX" secondItem="miD-63-IkY" secondAttribute="centerX" id="DSe-j4-4iy"/>
+                        <constraint firstItem="crE-V1-gED" firstAttribute="top" secondItem="miD-63-IkY" secondAttribute="top" constant="18" id="Rz7-TK-9K9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="miD-63-IkY" secondAttribute="trailing" id="0rA-ky-8O5"/>
+                <constraint firstItem="miD-63-IkY" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="ngU-6Y-t1T"/>
+                <constraint firstItem="miD-63-IkY" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="pp0-Dn-ge0"/>
+                <constraint firstAttribute="bottom" secondItem="miD-63-IkY" secondAttribute="bottom" id="zXa-oO-Oam"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="qiX-UW-igg" id="tWX-rF-a6t"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="140.95982142857142"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
